@@ -12,22 +12,15 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        $post = new Post();
+        // $post = new Post();
 
-        $post->title = 'Post 1';
-        $post->content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
-        $post->category = 'categoria 1';
-        $post->published_at = now();
+        // $post->title = 'Post 1';
+        // $post->content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
+        // $post->category = 'categoria 1';
+        // $post->published_at = now();
 
-        $post->save();
+        // $post->save();
 
-        $post = new Post();
-
-        $post->title = 'Post 2';
-        $post->content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
-        $post->category = 'categoria 2';
-        $post->published_at = now();
-
-        $post->save();
+        Post::factory(100)->create();
     }
 }
